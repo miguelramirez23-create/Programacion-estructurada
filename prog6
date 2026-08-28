@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main()
+{
+//Entradas tipo flotante cateto a cateto b cateto c//
+//Salidas tipo flotante area y semiperimetro//
+float a, b, c, p, area;
+
+printf("Ingresa el lado a: ");
+scanf("%f", &a);
+
+printf("Ingresa el lado b: ");
+scanf("%f", &b);
+
+printf("Ingresa el lado c: ");
+scanf("%f", &c);
+
+p = (a + b + c) / 2;
+area = sqrt(p * (p - a) * (p - b) * (p - c));
+
+printf("Semiperimetro: %.2f\n", p);
+printf("Area: %.2f\n", area);
+
+return 0;
+}
+
